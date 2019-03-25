@@ -1,0 +1,97 @@
+<html>
+
+
+    
+<head>
+    
+    <title>Soon The Troi</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css" />
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    
+    </head>
+    
+    <!--------baner--->
+    
+    <!-- This script has been in the http://www.javascripts.com Javascript Public Library! -->
+<!-- Note that though this material may have been in a public depository, certain author copyright restrictions may apply. -->
+<html> 
+<head>
+  <script language="JavaScript">
+    // ================================================ //
+    // Typing Banner v1.1 by Elton Kong (2000/05/01).   //
+    // (c)1998-2000 Elton Kong. All Rights Reserved.    //
+    // You can freely use or modify the script, as long //
+    // as this message is kept intact in the source.    //
+    //                                                  //
+    // Contact me by:                                   //
+    // elton@graffiti.net                               //
+    // http://home.netvigator.com/~freya/               //
+    // ================================================ // 
+    // banner messages
+    // interval between message advancement
+    // interval between character advancement
+    // index of message pointer
+    // index of character pointer
+    var TB_msg, TB_msg_delay, TB_char_delay, TB_msg_index, TB_char_index; 
+    function TB_runBanner() {
+      document.TB_f.t.value+=TB_msg[TB_msg_index].charAt(TB_char_index); 
+      if (TB_char_index<(TB_msg[TB_msg_index].length-1)) {
+        TB_char_index++;
+        setTimeout("TB_runBanner()", TB_char_delay);
+      } else {
+        TB_msg_index =(TB_msg_index+1)%TB_msg.length;
+        TB_char_index=0;
+        setTimeout("TB_startBanner()", TB_msg_delay);
+      }
+    } 
+    function TB_startBanner() {
+      document.TB_f.t.value="";
+      TB_runBanner();
+    } 
+    function TB_initBanner() {
+      TB_msg   = new Array();
+      TB_msg[0]="مرحبأ بكم فى موقع سكون";
+      TB_msg[1]="ستجد كل ما تريد في موقع سكون من صحف وبطاقات والكثير الكثير "+
+                "اتمنى لكم التوفيق"; 
+      TB_msg_delay =3000; // milli-seconds
+      TB_char_delay=100;  // milli-seconds 
+      TB_msg_index =0;
+      TB_char_index=0; 
+      TB_startBanner();
+    } 
+    // ================= //
+    // End Typing Banner //
+    // ================= //
+  </script>
+</head> 
+<body onLoad="TB_initBanner();">
+  <div align=center><form name="TB_f" onSubmit="return(false);"><textarea
+    name="t" rows=2 cols=60 wrap>   
+    
+    
+    <!---body+div+ul--->
+<body>
+    
+    
+    
+    <div class="header"></div>
+    
+    <div class="span">
+    
+        <ul>
+            <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+<span class="sr-only">Loading...</span>
+    
+    </ul>
+
+    
+    </div>
+
+
+        <!-----end---->
+    
+    </body>
+</html>
